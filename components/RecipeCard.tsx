@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { urlFor } from '../sanity/image'
+import { urlFor } from '@/app/sanity/image'
 
 interface RecipeCardProps {
   recipe: {

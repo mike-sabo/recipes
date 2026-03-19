@@ -1,7 +1,7 @@
 
 import { client } from './sanity/client'
 import { getAllRecipesQuery } from './sanity/queries'
-import RecipeCard from './components/RecipeCard'
+import RecipeCard from '@/components/RecipeCard'
 
 export const dynamic = 'force-dynamic'
 

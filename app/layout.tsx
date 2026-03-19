@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Recipes",
@@ -24,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 text-zinc-900`}>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased bg-zinc-50 text-zinc-900`}>
         <nav className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-zinc-100">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
             <a href="/" className="text-lg font-semibold tracking-tight text-zinc-900 hover:text-amber-600 transition-colors">
