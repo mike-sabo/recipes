@@ -24,24 +24,26 @@ Next.js App Router (this repo)
 ## Sanity Content Model
 
 ### `recipe` (document)
-| Field | Type | Notes |
-|---|---|---|
-| `title` | string | Required |
-| `slug` | slug | Source: `title` |
-| `image` | image | Hotspot enabled |
-| `description` | text | Short summary |
-| `ingredients` | array of `ingredient` | See below |
-| `steps` | array of block | PortableText (rich text) |
-| `prepTime` | number | Minutes |
-| `cookTime` | number | Minutes |
-| `tags` | array of string | Tag layout |
+
+| Field         | Type                  | Notes                    |
+| ------------- | --------------------- | ------------------------ |
+| `title`       | string                | Required                 |
+| `slug`        | slug                  | Source: `title`          |
+| `image`       | image                 | Hotspot enabled          |
+| `description` | text                  | Short summary            |
+| `ingredients` | array of `ingredient` | See below                |
+| `steps`       | array of block        | PortableText (rich text) |
+| `prepTime`    | number                | Minutes                  |
+| `cookTime`    | number                | Minutes                  |
+| `tags`        | array of string       | Tag layout               |
 
 ### `ingredient` (object, embedded in recipe)
-| Field | Type | Notes |
-|---|---|---|
-| `name` | string | Required |
-| `quantity` | number | Optional |
-| `unit` | string | Optional (e.g. "cups", "tbsp") |
+
+| Field      | Type   | Notes                          |
+| ---------- | ------ | ------------------------------ |
+| `name`     | string | Required                       |
+| `quantity` | number | Optional                       |
+| `unit`     | string | Optional (e.g. "cups", "tbsp") |
 
 ## Data Fetching Conventions
 
@@ -82,11 +84,11 @@ Next.js App Router (this repo)
 
 ## Environment Variables
 
-| Variable | Required | Description |
-|---|---|---|
-| `NEXT_PUBLIC_SANITY_PROJECT_ID` | Yes | Sanity project ID (`t27ykr9u`) |
-| `NEXT_PUBLIC_SANITY_DATASET` | Yes | Sanity dataset (`production`) |
-| `NEXT_PUBLIC_SANITY_API_VERSION` | No | Defaults to `2026-03-17` |
+| Variable                         | Required | Description                    |
+| -------------------------------- | -------- | ------------------------------ |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID`  | Yes      | Sanity project ID (`t27ykr9u`) |
+| `NEXT_PUBLIC_SANITY_DATASET`     | Yes      | Sanity dataset (`production`)  |
+| `NEXT_PUBLIC_SANITY_API_VERSION` | No       | Defaults to `2026-03-17`       |
 
 ## Adding New Features
 

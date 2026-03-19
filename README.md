@@ -11,14 +11,14 @@ A headless recipe app built with **Next.js 16** (App Router) and **Sanity.io** a
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | Next.js 16 (App Router) |
-| CMS | Sanity.io (headless, separate repo) |
-| Styling | Tailwind CSS v4 |
-| Images | `next/image` + `@sanity/image-url` |
-| Rich Text | `@portabletext/react` |
-| Deployment | Vercel |
+| Layer      | Technology                          |
+| ---------- | ----------------------------------- |
+| Framework  | Next.js 16 (App Router)             |
+| CMS        | Sanity.io (headless, separate repo) |
+| Styling    | Tailwind CSS v4                     |
+| Images     | `next/image` + `@sanity/image-url`  |
+| Rich Text  | `@portabletext/react`               |
+| Deployment | Vercel                              |
 
 ## Architecture
 
@@ -66,11 +66,11 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment Variables
 
-| Variable | Required | Description |
-|---|---|---|
-| `NEXT_PUBLIC_SANITY_PROJECT_ID` | Yes | Sanity project ID |
-| `NEXT_PUBLIC_SANITY_DATASET` | Yes | Sanity dataset name |
-| `NEXT_PUBLIC_SANITY_API_VERSION` | No | API version (defaults to `2026-03-17`) |
+| Variable                         | Required | Description                            |
+| -------------------------------- | -------- | -------------------------------------- |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID`  | Yes      | Sanity project ID                      |
+| `NEXT_PUBLIC_SANITY_DATASET`     | Yes      | Sanity dataset name                    |
+| `NEXT_PUBLIC_SANITY_API_VERSION` | No       | API version (defaults to `2026-03-17`) |
 
 ## Deployment
 
